@@ -1,4 +1,4 @@
-# InformationSystems_TermProject
+# Information Systems - Term Project - Comparison of Time Series DataBases CrateDB and QuestDB
 Term project for the course 'Analysis and Design of Information Systems', NTUA, 2023/24
 
 ## Objective:
