@@ -6,5 +6,5 @@ This project was carried out as the chosen term project for the course of "Analy
 
 ## Collaborators:
 - [Dimitrios-David Gerokonstantis](https://github.com/DimitrisDavidGerokonstantis)  (el19209)
-- [Athanasios Tsoukleidis-Karydakis](https://github.com/ThanosTsoukleidis-Karidakis)  (el19009)
+- [Athanasios Tsoukleidis-Karydakis](https://github.com/ThanosTsoukleidis-Karydakis)  (el19009)
 - [Filippos Sevastakis](https://github.com/FilipposSevastakis) (el19183)
