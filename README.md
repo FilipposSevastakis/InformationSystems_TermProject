@@ -61,6 +61,9 @@ For the implementation of the project we were, initially, required to configure 
    :warning: Possible Issues you may encounter (esp. using okeanos):<br>
    In case of an inability to upgrade the operating system or generally in situations where it seems that the system is experiancing connectivity issues with the "outside" world, it is recommended to check the routing table using the `netstat -nr` command. If an address in the form of 192.168.1.1 appears as the first address insted of the defaul gateway of the public network (83.212. ...), try to delete it executing `sudo route delete default gw 192.168.1.1 eth1`.
 
+## Databases' Setup:
+The installation & setup guides for the two databases under consideration can be found in [CrateDB's setup guide](/CrateDB/README.md) and [QuestDB's setup guide](/QuestDB/README.md).
+
 ## Cluster overview:
 <p align="center">
   <img src="https://github.com/FilipposSevastakis/InformationSystems_TermProject/assets/106911339/09703bd0-78d3-4896-b7e5-724c4a30cb77">
