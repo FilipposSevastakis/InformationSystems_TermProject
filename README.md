@@ -53,9 +53,9 @@ For the implementation of the project we were, initially, required to configure 
      cat ∼/.ssh/id_rsa.pub
      ```
      We copy the output and paste it in each workers' ./ssh/authorized_keys file and can now connect from one host to another by executing `ssh <hostname>`.
-4) Operation System upgrade:
+4) Operation System upgrade:<br>
    We gradually upgrade the operation system of all 3 VMs from Ubuntu 16.04 LTS to Ubuntu 20.04 LTS (the latest Ubuntu version that both Databases maintain packages for).
    - We initially upgrade to Ubuntu 18.04 by executing `sudo apt update && sudo apt upgrade -y`. When asked, we choose _"Install the package maintainer's version"_ and after the completion of the installation we reboot the VM (`sudo reboot`) and execute `sudo do-release-upgrade`, choosing again when asked _"Install the package maintainer's version"_, as well as _"dev/vda"_ as the GRUB install device.
    - For the upgrade from Ubuntu 18.04 to 20.04 we execute `sudo do-release upgrade`, choosing _"yes"_ to all options and _"4.0"_ as the upgrade version of LXD snap, when asked.
-   :warning: Possible Issues you may encounter (esp. using okeanos):
+   :warning: Possible Issues you may encounter (esp. using okeanos):<br>
    In case of an inability to upgrade the operating system or generally in situations where it seems that the system is experiancing connectivity issues with the "outside" world, it is recommended to check the routing table using the `netstat -nr` command. If an address in the form of 192.168.1.1 appears as the first address insted of the defaul gateway of the public network (83.212. ...), try to delete it executing `sudo route delete default gw 192.168.1.1 eth1`.
