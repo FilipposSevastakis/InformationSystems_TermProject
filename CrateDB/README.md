@@ -24,7 +24,7 @@ At this point, the apt will have access to the reporitories' packages of CrateDB
 sudo apt update
 sudo apt install crate
 ```
-! As mentioned earlier, the abovementioned process must be executed in every node of our cluster. At this point the single-node installation of CrateDB must have been successfully completed, which can be verified by executing the following:
+**!** As mentioned earlier, the abovementioned process must be executed in every node of our cluster. At this point the single-node installation of CrateDB must have been successfully completed, which can be verified by executing the following:
 ```bash
 sudo systemctl start crate # start the database
 sudo systemctl stop crate # stop the database
