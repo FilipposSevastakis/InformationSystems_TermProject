@@ -8,6 +8,6 @@ We, subsequently, execute the following command in the directory where the _ques
 ```bash
 ./questdb.sh start
 ```
-Using `flag -d`, we can "index" to the root directory of QuestDB. Thus, the default root directory of QuestDB being `HOME/.questdb`, where also conf directory can be found, that contains, amongst others, QuestDB's configuration file _server.conf_. 
+Using `flag -d`, we can "index" to the root directory of QuestDB. Thus, the default root directory of QuestDB being `HOME/.questdb`, where also conf directory can be found, that contains, amongst others, QuestDB's configuration file [server.conf](/server.conf). 
 
 With the commands `./questdb.sh stop` and `./questdb.sh status` we can stop and see the status of QuestDB, respectively.
