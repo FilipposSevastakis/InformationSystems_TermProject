@@ -1,6 +1,7 @@
 # CrateDB Setup:
 As a distributed database, CrateDB requires multi-node setup. For this purpose, we, initially, install CrateDB in all hosts of our system with a single-node setup, modifying subsequently it's "main" configuration file to convert it to a multi-node one.
 
+## Single-node Setup:
 To begin with, we ensure that the Advanced Packaging Tool (apt) of Ubuntu  is updated and that all it's required packages are installed, as follows:
 ```bash
 sudo apt update
@@ -24,10 +25,18 @@ At this point, the apt will have access to the reporitories' packages of CrateDB
 sudo apt update
 sudo apt install crate
 ```
-**!** As mentioned earlier, the abovementioned process must be executed in every node of our cluster. At this point the single-node installation of CrateDB must have been successfully completed, which can be verified by executing the following:
+**!** As mentioned earlier, the abovementioned process must be executed in every node of our cluster. We can verify the successful installation of CrateDB by executing the following:
 ```bash
 sudo systemctl start crate # start the database
 sudo systemctl stop crate # stop the database
 sudo systemctl restart crate # restart the DB
 sudo systemctl status crate # check the status of the DB
 ```
+One can alter any desired or/and necessary environment variables in /etc/default/crate. We opted for the following:
+```bash
+CRATE_HEAP_SIZE=2g
+MAX_LOCKED_MEMORY=unlimited
+CRATE_USE_IPV4=true
+```
+## Multi-node Setup:
+At this point, the single-node installation is completed and we can proceed to the necessary modifications for a multi-node (cluster) setup of CrateDB.
