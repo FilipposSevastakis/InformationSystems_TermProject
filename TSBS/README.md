@@ -30,4 +30,4 @@ source $HOME/.profile
 > ```
 
 ## Data generation & insertion and queries' generation & execution:
-For data generation and insertion and for the batch-queries' generation and execution we followed the steps mentioned in TSBS's instuctions. The queries we selected for the project, i.e. those we considered most valuable for a thorough comparison of the two databases, can be found in the [TSBS Queries directory](/Queries/TSBS Queries), amongst some single-queries of our own making.
+For data generation and insertion and for the batch-queries' generation and execution we followed the steps mentioned in TSBS's instuctions. The queries we selected for the project, i.e. those we considered most valuable for a thorough comparison of the two databases, can be found in the [TSBS Queries directory](/Queries/TSBS_Queries), amongst some single-queries of our own making.
