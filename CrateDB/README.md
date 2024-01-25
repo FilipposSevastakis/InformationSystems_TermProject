@@ -1,6 +1,6 @@
 # CrateDB Setup:
 As a distributed database, CrateDB requires multi-node setup. For this purpose, we, initially, install CrateDB in all hosts of our system with a single-node setup, modifying subsequently it's "main" configuration file to convert it to a multi-node one.
-
+[click here to jump to my anchor](#custom_anchor_name)
 ## Single-node Setup:
 To begin with, we ensure that the Advanced Packaging Tool (apt) of Ubuntu  is updated and that all it's required packages are installed, as follows:
 ```bash
@@ -77,7 +77,7 @@ At this point, CrateDB can run in the cluster of the system's nodes and we can s
 
 ## Admin UI:
 After the completion of either the single-node or the multi-node setup and having started the database, one can access the Admin UI of CrateDB in http://localhost:4200/.
-
+<a name="custom_anchor_name"></a>
 > [!IMPORTANT]  
 > In the case that the user (in this case, ourselves) is using their local machine while the cluster is running on VMs (e.g. of okeanos), in order to gain access to the Admin UI via localhost, it is necessary to use SSH tunneling during the connection process (from the local machine) to one of the remote nodes of the CrateDB cluster. This enables a secure, encrypted transfer of traffic to port 4200 (where CrateDB is running) on the remote machine to the corresponding port on the local machine. The "-i" argument specifies the directory where the private key, that was initially created, is stored, allowing the connection to be established in an authorized manner:
 > ```bash
