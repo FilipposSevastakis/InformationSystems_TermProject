@@ -1,7 +1,7 @@
 # TSBS:
 
 ## Setup:
-For the comparison of the two databases we utilized the [Time Series Benchmark Suite](https://github.com/timescale/tsbs) for both data generation and insertion and for the batch-queries' generation and execution. In particular, its 'Dev ops' use case, as it is the only "compatible" one with CrateDB. In the hyperlink above, one can find setup instructions for TSBS, which we also relied on.
+For the comparison of the two databases we utilized the [Time Series Benchmark Suite](https://github.com/timescale/tsbs) for both data generation and insertion and for the batch-queries' generation and execution. In particular, its 'Dev ops' use case, as it is the only "compatible" one with CrateDB. In the hyperlink above, one can find (setup) instructions for TSBS, which we also relied on.
 
 ### Go Programming Language Installation:
 For the successful installation of TSBS, we were required to have the Go Programming Language installed. To this end, we download (via wget) the necessary compressed file and unzip it (while also ensuring that Go isn't already installed in our system):
@@ -29,4 +29,5 @@ source $HOME/.profile
 > go env -w GO111MODULE=on
 > ```
 
-## Query and 
+## Data generation & insertion and queries' generation & execution:
+For data generation and insertion and for the batch-queries' generation and execution we followed the steps mentioned in TSBS's instuctions. The queries we selected for the project, i.e. those we considered most valuable for a thorough comparison of the two databases, can be found in the [Queries directory](/Queries), amongst some single-queries of our own making.
