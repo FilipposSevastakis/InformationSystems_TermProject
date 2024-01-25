@@ -10,4 +10,4 @@ We, subsequently, execute the following command in the directory where the _ques
 ```
 Using `flag -d`, we can "index" to the root directory of QuestDB. Thus, the default root directory of QuestDB being `HOME/.questdb`, where also conf directory can be found, that contains, amongst others, QuestDB's configuration file [server.conf](./server.conf). 
 
-With the commands `./questdb.sh stop` and `./questdb.sh status` we can stop and see the status of the database, respectively. We can access the Admin UI of QuestDB via http://localhost:9000, yet a connection using SSH tunneling might be necessary, as explained in the Important notice in CrateDB's Setup [click here to jump to my anchor](/CrateDB/README.md/#custom_anchor_name)
+With the commands `./questdb.sh stop` and `./questdb.sh status` we can stop and see the status of the database, respectively. We can access the Admin UI of QuestDB via http://localhost:9000, yet a connection using SSH tunneling might be necessary, as explained in the [Important notice in CrateDB's Setup](/CrateDB/README.md/#custom_anchor_name)
