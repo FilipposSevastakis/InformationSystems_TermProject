@@ -9,7 +9,9 @@ This project was carried out as the chosen term project for the course of "Analy
 - [Athanasios Tsoukleidis-Karydakis](https://github.com/ThanosTsoukleidis-Karydakis)  (el19009)
 - [Filippos Sevastakis](https://github.com/FilipposSevastakis) (el19183)
 
-## Cluster setup:
+## Setup:
+
+### Cluster setup:
 For the implementation of the project we were, initially, required to configure a cluster of interconnected machines, since not only do we intent to host multiple databases, but, most significantly, one of those is a distributed one. To that end, we were provided 3 VM's by okeanos-knossos, an Infrastructure-as-a-Service (IaaS) of the Greek Research and Technology Network (GRNET), that we set up executing the following:
 
 1) Private-Public keys' creation:<br>
@@ -58,13 +60,22 @@ For the implementation of the project we were, initially, required to configure 
    - We initially upgrade to Ubuntu 18.04 by executing `sudo apt update && sudo apt upgrade -y`. When asked, we choose _"Install the package maintainer's version"_ and after the completion of the installation we reboot the VM (`sudo reboot`) and execute `sudo do-release-upgrade`, choosing again when asked _"Install the package maintainer's version"_, as well as _"dev/vda"_ as the GRUB install device.
    - For the upgrade from Ubuntu 18.04 to 20.04 we execute `sudo do-release upgrade`, choosing _"yes"_ to all options and _"4.0"_ as the upgrade version of LXD snap, when asked.
 
-   :warning: Possible Issues you may encounter (esp. using okeanos):<br>
+    #### :warning: Possible Issues you may encounter (esp. using okeanos):<br>
    In case of an inability to upgrade the operating system or generally in situations where it seems that the system is experiancing connectivity issues with the "outside" world, it is recommended to check the routing table using the `netstat -nr` command. If an address in the form of 192.168.1.1 appears as the first address insted of the defaul gateway of the public network (83.212. ...), try to delete it executing `sudo route delete default gw 192.168.1.1 eth1`.
 
-## Databases' Setup:
+### Databases' Setup:
 The installation & setup guides for the two databases under consideration can be found in [CrateDB's setup guide](/CrateDB/README.md) and [QuestDB's setup guide](/QuestDB/README.md).
 
-## Cluster overview:
+### Cluster overview:
 <p align="center">
   <img src="https://github.com/FilipposSevastakis/InformationSystems_TermProject/assets/106911339/09703bd0-78d3-4896-b7e5-724c4a30cb77">
 </p>
+
+
+## Queries:
+The queries that were executed by both CrateDB and QuestDB so as to compare the databases' performance can be found in the [Queries directory](./Queries) and consist of batch-queries of Time Series Benchmark Suite, as well as single-queries of our own making.
+
+## Measurement results - Logs:
+Measurement results, as they were taken in the course of this project, are presented in the [logs file](./logs).
+
+## Final Report:
