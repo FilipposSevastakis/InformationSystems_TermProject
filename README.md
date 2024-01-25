@@ -78,4 +78,8 @@ The queries that were executed by both CrateDB and QuestDB so as to compare the 
 ## Measurement results - Logs:
 Measurement results, as they were taken in the course of this project, are presented in the [logs file](./logs).
 
-## Final Report:
+## Report:
+In the [Report directory](./Report) one can find the report, as well as its Latex code (for anyone interested).
+
+## Presentation:
+In the [Presentation directory](./Presentation) one can find the complementary presentation of the project, along with its Latex code (for anyone interested).
