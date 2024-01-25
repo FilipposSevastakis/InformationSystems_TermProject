@@ -16,5 +16,12 @@ source $HOME/.profile
 ```
 > To verify that Go is successfully installed, we can execute `go version`
 
-> [!NOTE]
-> 
+> [! NOTE]
+> Before installing TSBS, as refered in the TSBS's instructions, we needed to execute the following command:
+> ```bash
+> go env -w GO111MODULE=off
+> ```
+> Once we successfully install TSBS we can re-activate the module we deactivated with the above command, as follows:
+> ```bash
+> go env -w GO111MODULE=on
+> ```
