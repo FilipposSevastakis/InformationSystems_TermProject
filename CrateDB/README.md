@@ -39,7 +39,7 @@ MAX_LOCKED_MEMORY=unlimited
 CRATE_USE_IPV4=true
 ```
 ## Multi-node Setup:
-At this point, the single-node installation is completed and we can proceed to the necessary configuration for a multi-node (cluster) setup of CrateDB. We modify each node's [crate.yml file](/crate.yml), that can be found in the /etc/crate directory, as follows:
+At this point, the single-node installation is completed and we can proceed to the necessary configuration for a multi-node (cluster) setup of CrateDB. We modify each node's [crate.yml file](./crate.yml), that can be found in the /etc/crate directory, as follows:
 - For each node to be "visible" and connect with the others:
   ```bash
   discovery.seed hosts :
