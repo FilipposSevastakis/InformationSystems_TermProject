@@ -27,7 +27,7 @@ The installation & setup guides for the two databases under consideration can be
 The queries that were executed by both CrateDB and QuestDB so as to compare the databases' performance can be found in the [Queries directory](./Queries) and consist of batch-queries of Time Series Benchmark Suite, as well as single-queries of our own making.
 
 ## Measurement results - Logs:
-Measurement results, as they were taken in the course of this project, are presented in the [logs file](./logs).
+Measurement results, as they were taken in the course of this project, are presented in the [logs file](./logs.docx).
 
 ## Report:
 In the [Report directory](./Report) one can find the report, as well as its Latex code (for anyone interested).
